@@ -1,0 +1,24 @@
+They found that the actions of wind turbines would double the amount of rain that would fall in the region.
+
+Solar panels have a similar impact although they act in a different way.
+
+The authors say their work reinforces the view that large-scale renewables could transform the Sahara region.
+
+The scientists modelled what would happen if 9 million sq km of the Sahara desert was covered in renewable energy sources.
+
+They focussed on this area because it is sparsely populated, and it is also exposed to significant amounts of sun and wind and is close to large energy markets in Europe and the Middle East.
+
+According to authors' calculations, a massive installation in the desert would generate more than four times the amount of energy that the world currently uses every year.
+
+Previous studies have shown that installing wind and solar can have an impact on temperatures - but the key difference with this research is the impact on vegetation.
+
+"Our model results show that large-scale solar and wind farms in the Sahara would more than double the precipitation, especially in the Sahel, where the magnitude of rainfall increase is between 20mm and 500mm per year," said Dr Yan Li, the lead author of the paper from the University of Illinois, US.
+
+"As a result, vegetation cover fraction increases by about 20%."
+
+In the Sahel, the semi-arid region that lies to the south of the Sahara, average rainfall increased 1.12mm per day where wind farms were present, according to the study.
+
+############################
+With wind turbines, it's all about the mixing of air caused by the rotation of the blades. Wind farms mix warmer air from above, which creates a feedback loop whereby more evaporation, precipitation and plant growth occurs.
+
+"Wind farms increase surface roughness and therefore increase wind converging into low-pressure areas," said Dr Li. "The converging air has to rise, making it cool off and moisture condense, which will lead to increased rainfall."
