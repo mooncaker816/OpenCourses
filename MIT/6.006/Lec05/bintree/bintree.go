@@ -109,6 +109,10 @@ func (n *Node) AttachRSubTree(right *Node) {
 	n.UpdateHeightAbove()
 }
 
+func (n *Node) UpdateHeight() {
+	n.Height = n.maxHeightOfChildren() + 1
+}
+
 // UpdateHeightAbove updates height info for all the related nodes
 func (n *Node) UpdateHeightAbove() {
 	for max := n.maxHeightOfChildren(); n != nil && n.Height != max+1; {
@@ -285,7 +289,6 @@ func (n *Node) FprintWithUnitSize(w io.Writer, size int) {
 			prevlevel = l
 			buf.WriteString("\n")
 		}
-
 		var nodeLeftStr, nodeRightStr string
 		// 由父亲节点遗留下来的前缀偏移量
 		buf.WriteString(strings.Repeat(unitSpace, offset))
@@ -331,4 +334,28 @@ func (n *Node) FprintWithUnitSize(w io.Writer, size int) {
 	}
 	buf.WriteString("\n")
 	buf.Flush()
+}
+
+// TallerChild 返回高度较高的那个孩子节点，若同高，返回和n同侧的节点
+func (n *Node) TallerChild() *Node {
+	if n.HasLChild() && n.RChild == nil {
+		return n.LChild
+	}
+	if n.HasRChild() && n.LChild == nil {
+		return n.RChild
+	}
+
+	if n.HasLChild() && n.HasRChild() {
+		if n.LChild.Height < n.RChild.Height {
+			return n.RChild
+		}
+		if n.LChild.Height > n.RChild.Height {
+			return n.LChild
+		}
+		if n.IsLChild() {
+			return n.LChild
+		}
+		return n.RChild
+	}
+	return nil
 }
