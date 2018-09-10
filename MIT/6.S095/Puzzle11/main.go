@@ -31,9 +31,11 @@ func maxSum(a []int) int {
 
 func maxSumWithLookup(a []int, lookup map[int]int) int {
 	if len(a) == 0 {
+		lookup[0] = 0
 		return 0
 	}
 	if len(a) == 1 {
+		lookup[1] = a[0]
 		return a[0]
 	}
 	if result, ok := lookup[len(a)]; ok {
